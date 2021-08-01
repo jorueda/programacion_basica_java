@@ -1,41 +1,32 @@
-public class CuerpoDeAgua {
+public class CuerpoDeAgua extends ObjetoGeografico {
 
-    String Nombre;
-    int Id_cuerpo_agua;
-    String Municipio;
+    String tipo_agua;
+    String tipo_cuerpo;
     float IRCA;    
 
 
-    public CuerpoDeAgua(String Nombre, int Id_cuerpo_agua, String Municipio, float IRCA) {
-        this.Nombre = Nombre;
-        this.Id_cuerpo_agua = Id_cuerpo_agua;
-        this.Municipio = Municipio;
+    public CuerpoDeAgua(String Nombre, int id_objeto, String Municipio, String tipo_agua, String tipo_cuerpo, float IRCA) {
+        super(Nombre, id_objeto, Municipio);
+        this.tipo_agua = tipo_agua;
+        this.tipo_cuerpo = tipo_cuerpo;
         this.IRCA = IRCA;
     }
 
 
-    public String getNombre() {
-        return this.Nombre;
+    public String getTipo_agua() {
+        return this.tipo_agua;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setTipo_agua(String tipo_agua) {
+        this.tipo_agua = tipo_agua;
     }
 
-    public int getId_cuerpo_agua() {
-        return this.Id_cuerpo_agua;
+    public String getTipo_cuerpo() {
+        return this.tipo_cuerpo;
     }
 
-    public void setId_cuerpo_agua(int Id_cuerpo_agua) {
-        this.Id_cuerpo_agua = Id_cuerpo_agua;
-    }
-
-    public String getMunicipio() {
-        return this.Municipio;
-    }
-
-    public void setMunicipio(String Municipio) {
-        this.Municipio = Municipio;
+    public void setTipo_cuerpo(String tipo_cuerpo) {
+        this.tipo_cuerpo = tipo_cuerpo;
     }
 
     public float getIRCA() {
@@ -45,6 +36,7 @@ public class CuerpoDeAgua {
     public void setIRCA(float IRCA) {
         this.IRCA = IRCA;
     }
+
 
     public static String nivel(float irca_recibido) {
 

@@ -14,9 +14,9 @@ public class reto3 {
             String entrada = leer.nextLine();
             String[] vector = entrada.split(" ");
             int id_entero = Integer.parseInt(vector[1]);
-            float irca_flotante = Float.parseFloat(vector[3]);
+            float irca_flotante = Float.parseFloat(vector[5]);
     
-            cuerpo[i] = new CuerpoDeAgua(vector[0], id_entero, vector[2], irca_flotante);
+            cuerpo[i] = new CuerpoDeAgua(vector[0], id_entero, vector[2], vector[3], vector[4], irca_flotante);
             
         }
 
@@ -36,13 +36,17 @@ public class reto3 {
         String contador_string = String.format("%.2f", (float)contador);
         System.out.println(contador_string);
 
+        String nombre_municipios = "";
         for (int i = 0; i < cuerpo.length; i++) {
-            
             if (CuerpoDeAgua.nivel(cuerpo[i].getIRCA()) == "ALTO")
-                System.out.print(cuerpo[i].getMunicipio() + " ");
+                nombre_municipios += cuerpo[i].getMunicipio() + " ";
         }
 
-        System.out.println();
+        if (nombre_municipios == "")
+            System.out.println("NA");
+        else
+            System.out.println(nombre_municipios);
+
         System.out.println(CuerpoDeAgua.nivel(mas_alto));
 
         leer.close();
