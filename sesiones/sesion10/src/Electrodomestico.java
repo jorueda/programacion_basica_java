@@ -96,7 +96,7 @@ public class Electrodomestico {
         this.peso = peso;
     }
 
-    public void comprobarConsumo() {
+    public void comprobarConsumo(char consumo) {
         if (consumo >= 65 && consumo <= 70)
             this.consumo = consumo;
         else
@@ -152,5 +152,17 @@ public class Electrodomestico {
         
         return precioBase + aumento;
     }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " precioBase='" + getPrecioBase() + "'" +
+            ", color='" + getColor() + "'" +
+            ", consumo='" + getConsumo() + "'" +
+            ", peso='" + getPeso() + "'" +
+            "}";
+    }
+
 
 }

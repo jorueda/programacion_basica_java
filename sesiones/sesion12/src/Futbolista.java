@@ -27,15 +27,14 @@ public class Futbolista extends Seleccion_futbol {
         this.posicion = posicion;
     }
 
-    public void Entrevista();
-        System.out.println("Da una entrevista");
-
     @Override
     public void Entrenamiento() {
-        System.out.println("Realiza un entrenamiento (clase hija)");
+        String mensaje = "Realiza un entrenamiento (clase hija).";
+        System.out.println(mensaje);
+    }
+
+    public static void Entrevista() {
+        System.out.println("Da una entrevista (clase futbolista).");
     }
     
-
-    
-
 }
