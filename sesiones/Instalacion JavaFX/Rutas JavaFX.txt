@@ -1,0 +1,10 @@
+
+Adicionar Referenced Libraries en Visual Studio Code menú abajo a la izquierda:
+C:\Users\jorge\Downloads\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib
+Modificación en Run, Configuration, después de "mainClass": "App", adicionar:
+"vmArgs": "--module-path C:/Users/jorge/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+
+Ubicación del JDK:
+C:\Program Files\AdoptOpenJDK\jdk-11.0.11.9-hotspot
+Ubicación de OpenJFX:
+C:\Users\jorge\Downloads\openjfx-11.0.2_windows-x64_bin-sdk
