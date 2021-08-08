@@ -108,7 +108,7 @@
             <TextField fx:id="num2" layoutX="258.0" layoutY="159.0" />
             <Button layoutX="308.0" layoutY="200.0" mnemonicParsing="false" onAction="#realizar_calculo" text="=">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Button>
             <Label layoutX="280.0" layoutY="286.0" text="Resultado">
@@ -120,12 +120,17 @@
             <RadioButton fx:id="rdb_sum" layoutX="421.0" layoutY="124.0" mnemonicParsing="false" text="Sumar" />
             <RadioButton fx:id="rdb_res" layoutX="421.0" layoutY="151.0" mnemonicParsing="false" text="Restar" />
             <RadioButton fx:id="rdb_mul" layoutX="421.0" layoutY="176.0" mnemonicParsing="false" text="Multiplicar" />
-            <RadioButton fx:id="rdb_div" layoutX="421.0" layoutY="207.0" mnemonicParsing="false" text="Dividir" />
+            <RadioButton fx:id="rdb_div" layoutX="421.0" layoutY="200.0" mnemonicParsing="false" text="Dividir" />
             <ImageView fitHeight="124.0" fitWidth="106.0" layoutX="520.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Downloads/Calculadora.jpg" />
                </image>
             </ImageView>
+            <Button layoutX="106.0" layoutY="232.0" mnemonicParsing="false" onAction="#resetear" text="Resetear">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>

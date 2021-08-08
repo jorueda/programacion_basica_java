@@ -2,10 +2,11 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+
+import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ToggleGroup;
 
 public class operaciones_controller implements Initializable {
@@ -61,6 +62,13 @@ public class operaciones_controller implements Initializable {
                 resultado.setText(operador.dividir() + "");
             }   
 
+    }
+
+    @FXML
+    void resetear(ActionEvent event) {
+        num1.setText("");
+        num2.setText("");
+        resultado.setText("");
     }
 
     @FXML
