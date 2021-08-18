@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="703.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InicioController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="721.0" prefWidth="777.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="createButton" layoutX="63.0" layoutY="380.0" mnemonicParsing="false" onAction="#createProduct" text="Create Product" textFill="#114e5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="158.0" text="Código de producto:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="43.0" layoutY="192.0" text="Nombre de Producto:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="67.0" layoutY="232.0" text="Precio de compra:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="78.0" layoutY="270.0" text="Precio de venta:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="428.0" layoutY="158.0" prefHeight="20.0" prefWidth="123.0" text="Cant. en bodega:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="400.0" layoutY="199.0" prefHeight="20.0" prefWidth="149.0" text="Cant. min. requerida:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="400.0" layoutY="236.0" text="Cant max. permitida:" textFill="#7e75a8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <TextField fx:id="codeProduct" layoutX="187.0" layoutY="151.0" />
+            <TextField fx:id="nameProduct" layoutX="187.0" layoutY="185.0" />
+            <TextField fx:id="precioCompra" layoutX="187.0" layoutY="225.0" />
+            <TextField fx:id="precioVenta" layoutX="187.0" layoutY="264.0" />
+            <TextField fx:id="cantBodega" layoutX="561.0" layoutY="151.0" />
+            <TextField fx:id="cantMin" layoutX="561.0" layoutY="190.0" />
+            <TextField fx:id="cantMax" layoutX="561.0" layoutY="229.0" />
+            <Button fx:id="viewButton" layoutX="581.0" layoutY="386.0" mnemonicParsing="false" onAction="#viewProduct" prefHeight="31.0" prefWidth="132.0" text="View Inventory" textFill="#114e5b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="productsList" layoutX="60.0" layoutY="432.0" prefHeight="214.0" prefWidth="656.0" />
+            <ImageView fitHeight="80.0" fitWidth="84.0" layoutX="86.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Ciclo%20Java/CICLO_II_MINTIC-master/Componentes_Prácticos/sesion_15/solucion/CP_15/src/Imagenes/logo8.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="127.0" fitWidth="273.0" layoutX="273.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Ciclo%20Java/CICLO_II_MINTIC-master/Componentes_Prácticos/sesion_15/solucion/CP_15/src/Imagenes/logo4.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegistro" layoutX="281.0" layoutY="654.0" mnemonicParsing="false" onAction="#Registro" prefHeight="25.0" prefWidth="214.0" style="-fx-background-color: cyan;" text="Registro Venta/Client" textFill="#0e4b65">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
