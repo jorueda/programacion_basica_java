@@ -145,8 +145,8 @@
                               <TextField fx:id="tipo_cuerpo_editar" layoutX="199.0" layoutY="158.0" />
                               <Label layoutX="360.0" layoutY="135.0" prefHeight="17.0" prefWidth="86.0" text="IRCA" />
                               <TextField fx:id="IRCA_editar" layoutX="360.0" layoutY="158.0" />
-                              <Button layoutX="38.0" layoutY="211.0" mnemonicParsing="false" onAction="#boton_editar" text="Editar" />
-                              <Button layoutX="113.0" layoutY="211.0" mnemonicParsing="false" onAction="#boton_eliminar" text="Eliminar" />
+                              <Button layoutX="38.0" layoutY="211.0" mnemonicParsing="false" onAction="#boton_editar" text="Guardar edición" />
+                              <Button layoutX="170.0" layoutY="211.0" mnemonicParsing="false" onAction="#boton_eliminar" text="Eliminar" />
                               <Label layoutX="38.0" layoutY="28.0" prefHeight="17.0" prefWidth="86.0" text="ID" />
                               <TextField fx:id="id_buscar" layoutX="113.0" layoutY="24.0" />
                               <Button layoutX="281.0" layoutY="24.0" mnemonicParsing="false" onAction="#boton_buscar" text="Buscar" />
